@@ -33,27 +33,34 @@ int main(void)
 
 
 //spaces to center pyramid
-void printspaces(int num){
-    for(int j = 0; j < num; j++){
+void printspaces(int num)
+{
+    for(int j = 0; j < num; j++)
+    {
         printf(" ");
     }
 }
 
 //prints hashtags
-void printblocks(int num){
-    for(int j = 0; j < num+1; j++){
+void printblocks(int num)
+{
+    for(int j = 0; j < num+1; j++)
+    {
         printf("#");
     }
 }
 
 
 //cleans input and loops if input is incorrect
-int getinput(void){
+int getinput(void)
+{
     int input;
-    do{
+    do
+    {
     input = get_int("Height: ");
 
-    }while(input < 1 || input > 8);
+    }
+    while(input < 1 || input > 8);
 
 
     return input;

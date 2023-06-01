@@ -26,7 +26,7 @@ int compute_score(string word)
 {
     int total = 0;
     //loops through string
-    for(int i = 0; i < strlen(word); i++)
+    for(int i = 0, len = strlen(word); i < len ; i++)
     {
         //makes sure the character is valid A-Z
         if(toupper(word[i]) - 65 >= 0 && toupper(word[i]) - 65 <= 25){
